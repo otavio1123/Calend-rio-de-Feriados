@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Feriados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Calendário de Feriados</h1>
+
+        <form id="formFeriados">
+
+            <label>
+                Ano
+                <input type="number" id="ano" required>
+            </label>
+
+            <button type="submit">Consultar</button>
+
+        </form>
+
+        <p id="mensagem" class="erro"></p>
+
+        <div id="proximoFeriado"></div>
+
+        <p id="totalFeriados"></p>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Dia da semana</th>
+                    <th>Feriado</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaFeriados"></tbody>
+
+        </table>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
